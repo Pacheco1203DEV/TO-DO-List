@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="planificacion-de-tareas.png" type="image/x-icon">
+</head>
+<body>
+    <button id="darkModeToggle" class="dark-mode-btn">
+        <i class="fas fa-moon"></i>
+    </button>
+    <div class="container">
+        <h2>To-Do List 📋</h2>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Agregar Tareas">
+            <input type="date" id="taskDate" placeholder="Seleccionar Fecha">
+            <button onclick="addTask()" class="add-btn">ADD</button>
+        </div>
+        <div class="task-lists">
+            <h3>Tareas Pendientes</h3>
+            <ul id="taskList" class="task-list"></ul>
+            <h3>Tareas Completadas</h3>
+            <ul id="completedList" class="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
